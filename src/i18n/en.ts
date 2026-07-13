@@ -55,4 +55,4 @@ export const en = {
   footer: {
     rights: 'All rights reserved.',
   },
-} as const
+}

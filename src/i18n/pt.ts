@@ -56,4 +56,4 @@ export const pt = {
   footer: {
     rights: 'Todos os direitos reservados.',
   },
-} as const
+}
