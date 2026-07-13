@@ -1,6 +1,7 @@
 # Dev · Cover Letter
 
-Blog pessoal de uma página (SPA + PWA) como "cover letter" técnica.
+Blog pessoal de uma página (SPA + PWA) como "cover letter" técnica (Now in react 🤗
+).
 
 ## Stack
 
@@ -66,3 +67,4 @@ O deploy é automático via GitHub Actions ([.github/workflows/deploy.yml](.gith
 
 `public/pwa-192x192.png` e `pwa-512x512.png` são placeholders sólidos.
 Troque por um ícone real (ex.: exportando de `public/favicon.svg`) antes de publicar.
+# my-personal-blog-2
