@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Paletas de cor — light e dark são DISTINTAS (não só invertidas)
+   Valores em RGB (space-separated) para funcionar com <alpha-value>
+   ============================================================ */
+@layer base {
+  :root {
+    /* LIGHT: tons quentes de papel + azul-petróleo */
+    --bg: 245 244 240;         /* off-white / papel */
+    --surface: 255 255 255;
+    --surface-alt: 237 235 228;
+    --border: 214 211 202;
+    --text: 28 32 40;
+    --muted: 100 106 118;
+    --accent: 31 117 254;      /* Crayola Blue - #1F75FE */
+    --accent-soft: 214 227 255;
+  }
+
+  .dark {
+    /* DARK: azul-noite profundo + âmbar quente de destaque */
+    --bg: 10 14 23;            /* slate-950 puxado pro azul */
+    --surface: 17 24 39;
+    --surface-alt: 26 34 52;
+    --border: 39 51 74;
+    --text: 226 232 240;
+    --muted: 148 163 184;
+    --accent: 86 220 117;      /* Frosted Mint - #56DC75 */
+    --accent-soft: 22 54 31;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-text font-sans antialiased;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  /* Scrollbar discreta e temática */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-bg;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted;
+  }
+}
