@@ -9,8 +9,9 @@ export const en = {
   about: {
     title: 'About me',
     paragraphs: [
-      "Hi! I'm an experienced Full Stack Developer who has built many web applications, from database modeling to eye-catching, creative and complex user interfaces. I enjoy turning messy problems into products that are simple, fast and pleasant to use.",
-      'I have solid professional experience working mainly within the JavaScript/TypeScript ecosystem, though those are just the tools we use to solve everyday problems — and there is always something new to learn.',
+      "Hi! I'm a Full Stack Developer with experience building complete web applications, from database modeling to the creation of modern, intuitive, and sophisticated interfaces.",
+      'I enjoy turning complex problems into simple, fast, and pleasant solutions, always aiming to combine performance, usability, and a great user experience.',
+      'I have solid professional experience working mainly within the JavaScript and TypeScript ecosystem. That said, I believe technologies are just tools for solving everyday challenges — and there is always something new to learn, explore, and improve.',
     ],
   },
   projects: {

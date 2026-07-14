@@ -10,8 +10,10 @@ export const pt = {
     title: 'Sobre mim',
     // Parágrafo(s) de resumo pessoal
     paragraphs: [
-      'Olá! Sou um desenvolvedor Full Stack experiente, que construiu diversas aplicações web, desde a modelagem do banco de dados até interfaces de usuário chamativas, criativas e complexas. Gosto de transformar problemas confusos em produtos simples, rápidos e agradáveis de usar.',
-      'Tenho bastante experiência profissional atuando principalmente com o ecossistema JavaScript/TypeScript, contudo isso são apenas ferramentas que usamos para resolver os problemas do dia a dia, e existe sempre algo novo a se aprender.',
+      'Olá! Sou um desenvolvedor Full Stack com experiência no desenvolvimento de aplicações web completas, desde a modelagem do banco de dados até a criação de interfaces modernas, intuitivas e sofisticadas.',
+      'Gosto de transformar problemas complexos em soluções simples, rápidas e agradáveis de usar, sempre buscando unir performance, usabilidade e uma boa experiência para o usuário.',
+      'Tenho sólida experiência profissional atuando principalmente com o ecossistema JavaScript e TypeScript. Ainda assim, acredito que tecnologias são apenas ferramentas para resolver desafios do dia a dia — e que sempre existe algo novo para aprender, explorar e aprimorar.'
+      ,
     ],
   },
   projects: {
