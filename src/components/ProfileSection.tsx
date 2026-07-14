@@ -3,7 +3,11 @@ import { FiDownload } from 'react-icons/fi'
 import { useDict } from '../hooks/useDict'
 
 // Respeita o base do Vite (raiz em dev, /nome-do-repo/ no GitHub Pages).
-const resumeUrl = `${import.meta.env.BASE_URL}curriculo-placeholder.pdf`
+// Currículo por idioma: português e inglês.
+const resumeByLang = {
+  pt: `${import.meta.env.BASE_URL}tarik_curriculo_resumido.pdf`,
+  en: `${import.meta.env.BASE_URL}tarik_santiago_esmin_resume_v3.pdf`,
+} as const
 
 // Bloco de texto reutilizável com título + parágrafos.
 function Block({
@@ -41,7 +45,8 @@ function Block({
 
 // Coluna esquerda: sobre mim, projetos e visão de mundo.
 export function ProfileSection() {
-  const { t } = useDict()
+  const { t, lang } = useDict()
+  const resumeUrl = resumeByLang[lang]
 
   return (
     <div>
@@ -57,7 +62,7 @@ export function ProfileSection() {
         action={
           <a
             href={resumeUrl}
-            download="curriculo.pdf"
+            download={lang === 'pt' ? 'tarik-curriculo.pdf' : 'tarik-resume.pdf'}
             className="group inline-flex items-center gap-1.5 rounded-lg border border-border px-3 py-1.5 text-sm font-medium text-accent transition-colors hover:border-accent hover:bg-accent-soft"
           >
             {t.projects.downloadResume}
